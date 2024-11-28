@@ -27,6 +27,13 @@ body {
     top: 0;
 }
 
+.iconos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
 .dropdown {
     margin-top:8px;
 }
@@ -38,13 +45,6 @@ body {
     margin-top: 30px;
     width: 300px;
     text-align: center;
-}
-
-.iconos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
 }
 
 .perfil {
@@ -93,11 +93,13 @@ body {
 
 .columna5 {
     padding: 20px;
+    margin-bottom: 80px;
     animation: fadein 5s;
+    text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.Estudios, .Hobbies, .Lenguajes, .Idiomas {
+.Estudios, .Hobbies, .Lenguajes, .Idiomas, .SobreMi {
     text-align: center;
     margin-bottom: 20px;
     text-decoration: underline ;
