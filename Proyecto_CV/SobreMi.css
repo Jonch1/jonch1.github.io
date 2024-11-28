@@ -25,7 +25,6 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
-    margin-bottom: 100px;
 }
 
 .dropdown {
@@ -37,15 +36,17 @@ body {
     font-weight: bold;
     margin-bottom: 50px;
     margin-top: 30px;
-    padding: 20px;
+    width: 300px;
+    text-align: center;
 }
 
 .iconos {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 75px;
+    gap: 50px;
 }
+
 .perfil {
     display: block;
     flex-direction: column;
@@ -87,6 +88,12 @@ body {
 .columna4 {
     padding: 20px;
     animation: fadein 3.5s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.columna5 {
+    padding: 20px;
+    animation: fadein 5s;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
