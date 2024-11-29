@@ -1,12 +1,21 @@
+<?php
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $nombre = $_POST['nombre'];
+    $telefono = $_POST['telefono'];
+    $correo = $_POST['correo'];
+}
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main</title>
+    <title>Tus datos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="datos.css">
 </head>
 <body>
 <div class="container">
@@ -19,29 +28,21 @@
                 <button type="button" class="btn btn-outline-white" data-bs-toggle="dropdown"><img src="Imagenes/dropdown.png" alt="dropdown" height="50" width="50"></button>
                 <div class="dropdown-menu">
                     <a class="dropdown-item" href="#">Mi trabajo</a>
-                    <a class="dropdown-item" href="Contacto.html">Contacto</a>
+                    <a class="dropdown-item" href="index.html">Página principal</a>
                 </div>
             </div>
         </div>
     </header>
+    <h1 class="titulo">Gracias por contactar!!</h1><br>
+    <h4 class="subtitulo">Trataré de ponerme en contacto con usted lo antes posible</h4>
 
-    <div class="perfil">
-        <div class="imagen">
-            <img src="Imagenes/Gatete.png" class="rounded-circle" alt="Gatete" width="180" height="180">
-        </div>
-        <h1 class = "MiNombre">Juan José Amengual Far</h1>
-
-    <div class="botones">
-        <div class="boton1">
-            <a href= "SobreMi.html" class="btn btn-primary btn-custom">Sobre mi</a>
-        </div>
-        <div class="boton2">
-            <a href="https://github.com/Jonch1" class="btn btn-primary btn-custom">GitHub</a>
-        </div>
-        <div class="boton3">
-            <a href="https://www.linkedin.com/in/juan-jos%C3%A9-amengual-far-135404270/" class="btn btn-primary btn-custom">Linkedin</a>
-        </div>
-    </div>
+    <div class="datos">
+        <ul>
+            <p class="datosintroducidos"><strong>DATOS INTRODUCIDOS:</strong></p>
+            <li><strong>Nombre:</strong> <?php echo $nombre; ?></li>
+            <li><strong>Teléfono:</strong> <?php echo $telefono; ?></li>
+            <li><strong>Correo:</strong> <?php echo $correo; ?></li>
+        </ul>
     </div>
 
     <footer class="footer">
