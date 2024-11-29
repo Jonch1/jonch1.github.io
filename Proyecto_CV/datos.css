@@ -27,7 +27,6 @@ body {
     position: fixed;
     top: 0;
     margin-bottom: 100px;
-    z-index: 99;
 }
 
 .iconos {
