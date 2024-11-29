@@ -77,6 +77,11 @@ body {
     font-size: 18px;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .footer {
     display: flex;
     justify-content: space-between;

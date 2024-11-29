@@ -42,16 +42,33 @@ body {
 
 .titulo {
     margin-top: 60px;
-    font-size: 40px;
+    font-size: 30px;
     position: absolute;
     text-align: center;
 }
 
-.contacto {
-    padding-top: 160px;
-    display: flex;
+.subtitulo {
+    font-size: 20px;
+    margin-top: 150px;
     position: absolute;
-    left: 10px;
+    text-align: center;
+}
+
+.datos {
+    margin-top: 300px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+.datosintroducidos {
+    text-align: center;
+    text-decoration: underline black;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .footer {

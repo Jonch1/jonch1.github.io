@@ -26,25 +26,26 @@
   </header>
   <h1 class = "titulo">Contacta conmigo!!!</h1>
   <div class="contacto">
-    <form action="datos.php" method="post">
-      <h6>Nombre:</h6>
+    <form action="datos.html">
+      <label for="nombre">Nombre:</label><br>
       <input type="text" id="nombre" name="nombre" required><br><br>
 
-      <h6>Teléfono:</h6>
+      <label for="telefono">Teléfono:</label><br>
       <input type="text" id="telefono" name="telefono" required><br><br>
 
-      <h6>Correo:</h6>
+      <label for="correo">Correo:</label><br>
       <input type="text" id="correo" name="correo" required><br><br>
 
-      <h6>Comentame:</h6>
+      <label id="comentame">Comentame:<br>
       <textarea name="comentame" style="width:300px; height:300px;"></textarea><br>
+      </label><br>
 
       <input type="submit" value ="Enviar">
   </form>
   </div>
   <footer class="footer">
-    <span>juanjoamengualfar5@gmail.com</span>
-    <span>601018859</span>
+    <a href ="mailto:juanjoamengualfar5@gmail.com"><span>juanjoamengualfar5@gmail.com</span></a>
+    <a href="tel:601018859"><span>601018859</span></a>
   </footer>
 </div>
 </body>
