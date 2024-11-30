@@ -49,22 +49,15 @@ body {
 }
 
 .subtitulo {
-    font-size: 20px;
     margin-top: 150px;
+    font-size: 20px;
     position: absolute;
     text-align: center;
 }
 
-.datos {
-    margin-top: 300px;
+.gif {
+    margin-top: 250px;
     position: absolute;
-    width: 100%;
-    left: 0;
-}
-
-.datosintroducidos {
-    text-align: center;
-    text-decoration: underline black;
 }
 
 a {
