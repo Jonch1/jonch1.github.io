@@ -43,20 +43,28 @@ body {
 
 .titulo {
     margin-top: 60px;
-    font-size: 30px;
     position: absolute;
     text-align: center;
 }
 
-.subtitulo {
-    margin-top: 150px;
-    font-size: 20px;
+.subtitulo1 {
+    margin-top: 140px;
     position: absolute;
     text-align: center;
+    padding: 20px;
+    margin-right: 10px;
+}
+
+.subtitulo2 {
+    margin-top: 250px;
+    position: absolute;
+    text-align: center;
+    padding: 20px;
+    margin-right: 10px;
 }
 
 .gif {
-    margin-top: 250px;
+    margin-top: 350px;
     position: absolute;
 }
 

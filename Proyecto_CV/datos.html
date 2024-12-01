@@ -24,8 +24,9 @@
             </div>
         </div>
     </header>
-    <h1 class="titulo">Gracias por contactar!!</h1><br>
-    <h4 class="subtitulo">Trataré de ponerme en contacto con usted lo antes posible</h4>
+    <h2 id="nombre" class="titulo"></h2><br>
+    <p id="telefono" class="subtitulo1"></p>
+    <p id="correo" class="subtitulo2"></p>
 
     <img class = "gif" src="Imagenes/mensajeenviado.gif" alt="Mensaje" width="400" height="350">
 
@@ -34,5 +35,17 @@
         <a href="tel:601018859"><span>601018859</span></a>
     </footer>
 </div>
+<script>
+
+    const nombre = localStorage.getItem('nombre');
+    const telefono = localStorage.getItem('telefono');
+    const correo = localStorage.getItem('correo');
+
+
+    document.getElementById('nombre').innerHTML = "Gracias por contactar, " + nombre;
+    document.getElementById('telefono').innerHTML = "Trataré de ponerme en contacto con usted lo antes posible a traves del teléfono que ha facilitado: " + "<strong>" + telefono + "</strong>";
+    document.getElementById('correo').innerHTML = "O bien a través de su correo: " + "<strong>" + correo + "</strong>";
+
+</script>
 </body>
 </html>
