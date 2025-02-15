@@ -61,17 +61,6 @@
         const password = document.getElementById("password").value;
         const errorMessage = document.getElementById("error-message");
 
-        function sendData() {
-
-          if (!formulario.checkValidity()) {
-            alert("Por favor, complete todos los campos requeridos.");
-            return;
-          }
-
-          localStorage.setItem('username', username);
-
-        }
-
         if (username === "Venusita" && password === "laura021102") {
           window.location.href = "pagina2.html";
         } else {

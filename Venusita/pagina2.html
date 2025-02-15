@@ -19,7 +19,7 @@
 
     <div>
         <p class="text-right font-bold underline mt-4 mr-5 h-20"><a href="pagina1.html">Cerrar sesión</a></p>
-        <h1 id="username" class="text-2xl font-bold text text-center h-40"></h1>
+        <h1 id="username" class="text-2xl font-bold text text-center h-40">Bienvenida mi amor!!! Espero que te guste este detalle❤️❤️</h1>
 
         <div class="slider">
             <div class="slides ml-28">
@@ -47,11 +47,6 @@
     </footer>
 
     <script>
-
-        const username = localStorage.getItem('username');
-
-        document.getElementById('username').innerHTML = "Bienvenida " + username + "!!! Espero que te guste este detalle❤️❤️";
-
 
         const slides = document.querySelector('.slides');
         const prevButton = document.getElementById('prev');
@@ -94,7 +89,6 @@
         slides.addEventListener('transitionend', handleTransitionEnd);
 
         updateSlider();
-
 
     </script>
 
