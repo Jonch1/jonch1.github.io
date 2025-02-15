@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes</title>
+    <link href="estilo.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto px-4">
+            <h1 class="text-2xl font-bold text text-center">Te amo mi cielo ❤️❤️❤️❤️❤️</h1>
+        </div>
+    </header>
+
+    <div>
+        <p class="text-right font-bold underline mt-4 mr-5 h-20"><a href="pagina1.html">Cerrar sesión</a></p>
+        <h1 id="usuario" class="text-2xl font-bold text text-center h-40"></h1>
+
+        <div class="slider">
+            <div class="slides ml-28">
+                <div class="slide"><img src="1.jpg" alt="1"></div>
+                <div class="slide"><img src="2.jpg" alt="2"></div>
+                <div class="slide"><img src="3.jpg" alt="3"></div>
+                <div class="slide"><img src="4.jpg" alt="4"></div>
+                <div class="slide"><img src="5.jpg" alt="5"></div>
+            </div>
+            <div class="controls">
+                <button class="control" id="prev">⟨</button>
+                <button class="control" id="next">⟩</button>
+            </div>
+        </div>
+
+    </div>
+
+    <p class = "text-2xl text-center">Amo todo de ti, hasta tus boberias ❤️❤️❤️❤️❤️❤️</p>
+    <p class = "text-2xl text-center">Gracias por elegirme y querer estar conmigo, te amo ❤️❤️❤️❤️❤️❤️</p>
+
+    <footer class="bg-gray-800 text-white mt-44 p-4">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+
+        const usuario = localStorage.getItem('usuario');
+
+        document.getElementById('usuario').innerHTML = "Bienvenida " + usuario + "!!! Espero que te guste este detalle❤️❤️";
+
+
+        const slides = document.querySelector('.slides');
+        const prevButton = document.getElementById('prev');
+        const nextButton = document.getElementById('next');
+        let currentIndex = 0;
+
+        function updateSlider() {
+            slides.style.transition = 'transform 0.5s ease-in-out';
+            const offset = -currentIndex * 100;
+            slides.style.transform = `translateX(${offset}%)`;
+        }
+
+        function handleTransitionEnd() {
+
+            slides.style.transition = 'none';
+
+            if (currentIndex === -1) {
+
+                currentIndex = 4;
+                
+            } else if (currentIndex === 5) {
+
+                currentIndex = 0;
+            }
+
+            const offset = -currentIndex * 100;
+            slides.style.transform = `translateX(${offset}%)`;
+        }
+
+        nextButton.addEventListener('click', () => {
+            currentIndex++;
+            updateSlider();
+        });
+
+        prevButton.addEventListener('click', () => {
+            currentIndex--;
+            updateSlider();
+        });
+
+        slides.addEventListener('transitionend', handleTransitionEnd);
+
+        updateSlider();
+
+
+    </script>
+
+</body>
+
+</html>
